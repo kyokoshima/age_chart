@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addDoneButtonOnKeyboard()
+        ages.addTarget(self, action: #selector(ViewController.textFieldEditingChanged(sender:)), for: UIControlEvents.editingChanged)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -24,22 +25,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func didTextValueChanged(_ sender: Any) {
-        var source = [[String: String]]()
-        if let textField = sender as? UITextField {
-            let age = textField.text as! String
-            source.append(["1": age])
-            source.append(["2": age])
-            source.append(["3": age])
-            dataSource = source
-            tableView.reloadData()
-        }
-        
-    }
     
     func addDoneButtonOnKeyboard()
     {
-        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x:0, y:0, width:320, height:50))
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x:0, y:0, width:view.bounds.width, height:50))
         doneToolbar.barStyle = UIBarStyle.blackTranslucent
         
         let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
@@ -81,5 +70,29 @@ extension ViewController : UITableViewDataSource {
         
         return cell
         
+    }
+}
+
+extension ViewController {
+    @objc func textFieldEditingChanged(sender: UITextField) {
+        var source = [[String: String]]()
+        if let textField = sender as? UITextField {
+            if let age = Int(textField.text!) {
+                var decimalNumber = 10
+                while (age / decimalNumber > 2) {
+                    var up = Double(age / decimalNumber)
+                    up.round(.down)
+
+                    source.append([decimalNumber.description: up.description])
+                    decimalNumber = decimalNumber + 1
+                    
+                }
+            }
+//            source.append(["1": age])
+//            source.append(["2": age])
+//            source.append(["3": age])
+            dataSource = source
+            tableView.reloadData()
+        }
     }
 }
