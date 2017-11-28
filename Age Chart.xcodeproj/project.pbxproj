@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09007E676D4CC4A86AF1F8DC /* Pods_Age_Chart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FA6994922DE43148ED30E6 /* Pods_Age_Chart.framework */; };
 		968AD5CB1FC1857500E15D84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968AD5CA1FC1857500E15D84 /* AppDelegate.swift */; };
 		968AD5CD1FC1857500E15D84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968AD5CC1FC1857500E15D84 /* ViewController.swift */; };
 		968AD5D01FC1857500E15D84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968AD5CE1FC1857500E15D84 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		968AD5D51FC1857500E15D84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968AD5D31FC1857500E15D84 /* LaunchScreen.storyboard */; };
 		968AD5E01FC1857600E15D84 /* Age_ChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968AD5DF1FC1857600E15D84 /* Age_ChartTests.swift */; };
 		968AD5EB1FC1857600E15D84 /* Age_ChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968AD5EA1FC1857600E15D84 /* Age_ChartUITests.swift */; };
+		99E2D5A1533ACF99829858AD /* Pods_Age_ChartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F2C0FD8E8F95AA98B33F7C /* Pods_Age_ChartTests.framework */; };
+		A8D636EA70100C7235AEE80A /* Pods_Age_ChartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB14D410559704A2657AE3DA /* Pods_Age_ChartUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15E8576E4E4ED9C7C890C280 /* Pods-Age ChartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Age ChartTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Age ChartTests/Pods-Age ChartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		374FD9FB2334D82DAE23619C /* Pods-Age Chart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Age Chart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Age Chart/Pods-Age Chart.release.xcconfig"; sourceTree = "<group>"; };
+		68F2C0FD8E8F95AA98B33F7C /* Pods_Age_ChartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Age_ChartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7281C8C985333EB3F2D623F8 /* Pods-Age ChartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Age ChartTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Age ChartTests/Pods-Age ChartTests.release.xcconfig"; sourceTree = "<group>"; };
+		881132AC43F806082ACFB982 /* Pods-Age ChartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Age ChartUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Age ChartUITests/Pods-Age ChartUITests.release.xcconfig"; sourceTree = "<group>"; };
 		968AD5C71FC1857500E15D84 /* Age Chart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Age Chart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968AD5CA1FC1857500E15D84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		968AD5CC1FC1857500E15D84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		968AD5E61FC1857600E15D84 /* Age ChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Age ChartUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968AD5EA1FC1857600E15D84 /* Age_ChartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Age_ChartUITests.swift; sourceTree = "<group>"; };
 		968AD5EC1FC1857600E15D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7ADCA0CBC598EF39A40F28 /* Pods-Age ChartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Age ChartUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Age ChartUITests/Pods-Age ChartUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7FA6994922DE43148ED30E6 /* Pods_Age_Chart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Age_Chart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB14D410559704A2657AE3DA /* Pods_Age_ChartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Age_ChartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD89734075097601C839C3BC /* Pods-Age Chart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Age Chart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Age Chart/Pods-Age Chart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09007E676D4CC4A86AF1F8DC /* Pods_Age_Chart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E2D5A1533ACF99829858AD /* Pods_Age_ChartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D636EA70100C7235AEE80A /* Pods_Age_ChartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64969634368A0D325842E67F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7FA6994922DE43148ED30E6 /* Pods_Age_Chart.framework */,
+				68F2C0FD8E8F95AA98B33F7C /* Pods_Age_ChartTests.framework */,
+				FB14D410559704A2657AE3DA /* Pods_Age_ChartUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		968AD5BE1FC1857500E15D84 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				968AD5DE1FC1857600E15D84 /* Age ChartTests */,
 				968AD5E91FC1857600E15D84 /* Age ChartUITests */,
 				968AD5C81FC1857500E15D84 /* Products */,
+				D0F94BAE7DE72B4ABF59373E /* Pods */,
+				64969634368A0D325842E67F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,19 @@
 			path = "Age ChartUITests";
 			sourceTree = "<group>";
 		};
+		D0F94BAE7DE72B4ABF59373E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD89734075097601C839C3BC /* Pods-Age Chart.debug.xcconfig */,
+				374FD9FB2334D82DAE23619C /* Pods-Age Chart.release.xcconfig */,
+				15E8576E4E4ED9C7C890C280 /* Pods-Age ChartTests.debug.xcconfig */,
+				7281C8C985333EB3F2D623F8 /* Pods-Age ChartTests.release.xcconfig */,
+				CE7ADCA0CBC598EF39A40F28 /* Pods-Age ChartUITests.debug.xcconfig */,
+				881132AC43F806082ACFB982 /* Pods-Age ChartUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 968AD5EF1FC1857600E15D84 /* Build configuration list for PBXNativeTarget "Age Chart" */;
 			buildPhases = (
+				49373719E2F270D65FC68E59 /* [CP] Check Pods Manifest.lock */,
 				968AD5C31FC1857500E15D84 /* Sources */,
 				968AD5C41FC1857500E15D84 /* Frameworks */,
 				968AD5C51FC1857500E15D84 /* Resources */,
+				F8D09EA4934962ACDFDCB01D /* [CP] Embed Pods Frameworks */,
+				9DBC26BF486201A5674A2564 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 968AD5F21FC1857600E15D84 /* Build configuration list for PBXNativeTarget "Age ChartTests" */;
 			buildPhases = (
+				CC2001595BCCC40093543AF5 /* [CP] Check Pods Manifest.lock */,
 				968AD5D71FC1857600E15D84 /* Sources */,
 				968AD5D81FC1857600E15D84 /* Frameworks */,
 				968AD5D91FC1857600E15D84 /* Resources */,
+				A46A6546DC440BE7FBAA50B4 /* [CP] Embed Pods Frameworks */,
+				2976AB418F0CC61441A1FF14 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 968AD5F51FC1857600E15D84 /* Build configuration list for PBXNativeTarget "Age ChartUITests" */;
 			buildPhases = (
+				29FE99811CE013F0C1AC2564 /* [CP] Check Pods Manifest.lock */,
 				968AD5E21FC1857600E15D84 /* Sources */,
 				968AD5E31FC1857600E15D84 /* Frameworks */,
 				968AD5E41FC1857600E15D84 /* Resources */,
+				FFA83D90314FCB018EAF79DD /* [CP] Embed Pods Frameworks */,
+				71A3DC1EDB23191EC0BEDEBC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2976AB418F0CC61441A1FF14 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Age ChartTests/Pods-Age ChartTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29FE99811CE013F0C1AC2564 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Age ChartUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49373719E2F270D65FC68E59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Age Chart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A3DC1EDB23191EC0BEDEBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Age ChartUITests/Pods-Age ChartUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DBC26BF486201A5674A2564 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Age Chart/Pods-Age Chart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A46A6546DC440BE7FBAA50B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Age ChartTests/Pods-Age ChartTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC2001595BCCC40093543AF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Age ChartTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8D09EA4934962ACDFDCB01D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Age Chart/Pods-Age Chart-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Age Chart/Pods-Age Chart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA83D90314FCB018EAF79DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Age ChartUITests/Pods-Age ChartUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		968AD5C31FC1857500E15D84 /* Sources */ = {
@@ -363,7 +562,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +613,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -424,6 +623,7 @@
 		};
 		968AD5F01FC1857600E15D84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD89734075097601C839C3BC /* Pods-Age Chart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +640,7 @@
 		};
 		968AD5F11FC1857600E15D84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 374FD9FB2334D82DAE23619C /* Pods-Age Chart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +657,7 @@
 		};
 		968AD5F31FC1857600E15D84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E8576E4E4ED9C7C890C280 /* Pods-Age ChartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +675,7 @@
 		};
 		968AD5F41FC1857600E15D84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7281C8C985333EB3F2D623F8 /* Pods-Age ChartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +693,7 @@
 		};
 		968AD5F61FC1857600E15D84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE7ADCA0CBC598EF39A40F28 /* Pods-Age ChartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +710,7 @@
 		};
 		968AD5F71FC1857600E15D84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881132AC43F806082ACFB982 /* Pods-Age ChartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
