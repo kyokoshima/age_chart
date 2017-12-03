@@ -12,7 +12,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ages: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var validationLabel: UILabel!
+    @IBOutlet weak var baloon: BalloonView!
+    @IBOutlet weak var actualAge: UILabel!
+    @IBOutlet weak var actualNumberOfDigit: UILabel!
+    
     var dataSource = [[String: String]]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +56,12 @@ class ViewController: UIViewController {
     
     @objc func doneButtonAction()
     {
+//        self.ages.perform(#selector(textFieldShouldReturn(_:)))
+        if let age = ages.text {
+            validate(age)
+        }
         self.ages.resignFirstResponder()
+        
     }
     
 }
@@ -81,10 +89,11 @@ extension ViewController : UITableViewDataSource {
 
 extension ViewController : UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let str = string.trimmingCharacters(in: .newlines)
         let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
-        let compSepByCharInSet = string.components(separatedBy: aSet)
+        let compSepByCharInSet = str.components(separatedBy: aSet)
         let numberFiltered = compSepByCharInSet.joined(separator: "")
-        let isNumber = string == numberFiltered
+        let isNumber = str == numberFiltered
         var validated:Bool = true
         var message:String = ""
         if (!isNumber) {
@@ -92,80 +101,41 @@ extension ViewController : UITextFieldDelegate {
             validated = false
         }
         
-        self.validationLabel.text = message
-        self.validationLabel.isHidden = validated
+        //        self.validationLabel.text = message
+        //        self.validationLabel.isHidden = validated
+        showValidationError(message, result: validated)
+        if validated {
+            
+        }
         return validated
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if let age: Int = Int(textField.text!)! {
-        var validated:Bool
+    
+    
+    
+    func validateAge(_ age: String?) -> Bool {
+        var validated = false
         var message:String = ""
-        if (age > 200) {
-            validated = false
-            message = "嘘でしょ"
-        } else if (age < 20) {
-            validated = false
-            message = "若すぎ"
-        } else {
-            validated = true
-        }
-        self.validationLabel.isHidden = validated
-        if (validated) {
-            var source = [[String: String]]()
-            if let age = Int(textField.text!) {
-                var decimalNumber = 10
-                while (26 > decimalNumber) {
-                    //                    if (decimalNumber == 10) {
-                    //                        source.append([decimalNumber.description: age.description])
-                    //                    } else {
-                    //                    var firstDigit = Double(age / decimalNumber)
-                    //                    firstDigit.round(.down)
-                    if let value = convertToNumberString(age, decimalNumber: decimalNumber) {
-                        //                        let value = "\(Int(firstDigit).description)\(secondDigit)"
-                        source.append([decimalNumber.description: value])
-                    }
-                    
-                    //                    }
-                    decimalNumber = decimalNumber + 1
-                }
+        if let age:Int = Int((age)!) {
+            if (age > 150) {
+                validated = false
+                message = "嘘でしょ"
+            } else if (age < 20) {
+                validated = false
+                message = "若すぎ"
+            } else {
+                validated = true
             }
-            dataSource = source
-            tableView.reloadData()
             
         } else {
-            self.validationLabel.text = message
-            
+            validated = false
         }
-        }
+//        self.validationLabel.isHidden = validated
+//        self.validationLabel.text = message
+        showValidationError(message, result: validated)
+        return validated
     }
     
-}
-extension ViewController {
-    @objc func textFieldEditingChanged(sender: UITextField) {
-        var source = [[String: String]]()
-        if let textField = sender as? UITextField {
-            if let age = Int(textField.text!) {
-                var decimalNumber = 10
-                while (26 > decimalNumber) {
-                    //                    if (decimalNumber == 10) {
-                    //                        source.append([decimalNumber.description: age.description])
-                    //                    } else {
-                    //                    var firstDigit = Double(age / decimalNumber)
-                    //                    firstDigit.round(.down)
-                    if let value = convertToNumberString(age, decimalNumber: decimalNumber) {
-                        //                        let value = "\(Int(firstDigit).description)\(secondDigit)"
-                        source.append([decimalNumber.description: value])
-                    }
-                    
-                    //                    }
-                    decimalNumber = decimalNumber + 1
-                }
-            }
-            dataSource = source
-            tableView.reloadData()
-        }
-    }
     
     func convertToNumberString(_ baseNumber: Int, decimalNumber: Int) -> String? {
         //        let baseNumber = 10
@@ -192,6 +162,17 @@ extension ViewController {
         return String(character.reversed())
     }
     
+    func showValidationError(_ message:String, result:Bool) {
+        if !result {
+            if !message.isEmpty {
+                baloon.label.text = message
+                baloon.isHidden = false
+            }
+        } else {
+            baloon.label.text = ""
+            baloon.isHidden = true
+        }
+    }
     func convertToDigitCharacter(_ number: Int, decimalNumber: Int) -> String {
         if (number < 10) {
             return number.description
@@ -202,7 +183,84 @@ extension ViewController {
         return (character?.description)!
         
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //        if let age: Int = Int(textField.text!)! {
+        //            var validated:Bool = false
+        //            var message:String = ""
+        //            if (age > 150) {
+        //                validated = false
+        //                message = "嘘でしょ"
+        //            } else if (age < 20) {
+        //                validated = false
+        //                message = "若すぎ"
+        //            } else {
+        //                validated = true
+        //            }
+        //            if (!validated) {
+        //                return false
+        //            }
+        //            self.validationLabel.isHidden = validated
+        return validate(textField.text!)
+//        if (validateAge(textField.text)) {
+//            var source = [[String: String]]()
+//            if let age = Int(textField.text!) {
+//                var decimalNumber = 10
+//                while (26 > decimalNumber) {
+//
+//                    if let value = convertToNumberString(age, decimalNumber: decimalNumber) {
+//                        //                        let value = "\(Int(firstDigit).description)\(secondDigit)"
+//                        source.append([decimalNumber.description: value])
+//                    }
+//
+//                    //                    }
+//                    decimalNumber = decimalNumber + 1
+//                }
+//            }
+//            dataSource = source
+//            tableView.reloadData()
+//
+//            //            } else {
+//            //                self.validationLabel.text = message
+//            //
+//            //            }
+//            //        }
+//            return true
+//        }
+//        return false
+    }
+    
+    func validate(_ age:String) -> Bool {
+        if (validateAge(age)) {
+            var source = [[String: String]]()
+            if let age = Int(age) {
+                var decimalNumber = 10
+                while (26 > decimalNumber) {
+                    
+                    if let value = convertToNumberString(age, decimalNumber: decimalNumber) {
+                        //                        let value = "\(Int(firstDigit).description)\(secondDigit)"
+                        source.append([decimalNumber.description: value])
+                    }
+                    
+                    //                    }
+                    decimalNumber = decimalNumber + 1
+                }
+            }
+            dataSource = source
+            tableView.reloadData()
+            
+            //            } else {
+            //                self.validationLabel.text = message
+            //
+            //            }
+            //        }
+            return true
+        }
+        return false
+    }
+    
 }
+
 
 
 
